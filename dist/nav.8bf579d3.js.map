@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/nav.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA","file":"nav.8bf579d3.js","sourceRoot":"..","sourcesContent":["// $(document).ready(function(){\n//     $('.sidebarBtn').click(function(){\n//         $('.sidebar').toggleClass('active');\n//         $('.sidebarBtn').toggleClass('toggle');\n//     });\n// });"]}

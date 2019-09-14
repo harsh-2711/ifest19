@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/style.493e6e98.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/nav.8bf579d3.js"></script>
+
+    <style>/* Team Page */
+        .page-title{
+            text-align: center;
+            width: 100%;
+            height: 20%;
+        }
+        .page-title i{
+            color: #fff;
+            font-size: 30px;
+            position: absolute;
+            left: 5%;
+            top: 7%;
+        }
+        .page-title i:hover{
+            opacity: 0.7;
+        }
+        .page-title h1{
+            padding: 35px;
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #d5cae2;
+        }
+        .cont-grid{
+            margin: 0px 0 0 0;
+            padding: 0px 0px 0px 0px;
+            list-style: none;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+        .cont-grid li {
+            width: 250px;
+            height: 250px;
+            display: inline-block;
+            margin: 50px 50px;
+        }
+        .user{
+            color: white;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: relative;
+            cursor: default;
+        }
+        .cont-image{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .cont-image img{
+            width: 100%;
+            height: 100%;
+            /* border-radius: 10%; */
+        }
+        .overlay {
+            position: absolute; 
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.3);
+            color: #f1f1f1; 
+            width: inherit;
+            transition: .5s rota;
+            opacity:0;
+            color: white;
+            padding: 20px 0px 20px 0px;
+            text-align: center;
+        }
+        .text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+        }
+        .overlay h3{
+            font-size: 20px;
+        }
+        .overlay h5{
+            font-size: 16px;
+        }
+        .overlay a{
+            color: #fff;
+        }
+        .cont-image:hover img{
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            transition: .3s ease-in-out;
+            /* border-radius: 50%; */
+        }
+        .cont-image:hover .overlay {
+            opacity: 1;
+            /* border-radius: 50%; */
+            transition: .3s ease-in-out;
+        }
+        @media(max-width: 576px){
+            .cont-grid li{
+                margin: 45px auto;
+            }
+        }
+        /* //Team Page */</style>
+
+<script src="/register.js"></script></head>
+<body>
+
+    <input type="checkbox" id="navcheck" role="button" title="menu">
+    
+    <label for="navcheck" aria-hidden="true" title="menu">
+        <span class="burger">
+            <span class="bar">
+                <span class="visuallyhidden">Menu</span>
+            </span>
+        </span>
+    </label>
+    
+    <nav id="menu">
+        <a href="/index.html">Home</a>
+        <!-- <a href="./about.html">About</a> -->
+        <a href="/event\event.html">Events</a>
+        <a href="/team.html">Team</a>
+        <a href="/register.html">Register</a>
+        <!-- <a href="./contact.html">Contact Us</a> -->
+        <ul class="social-medi">
+            <li><a href="https://m.facebook.com/ifestdaiict" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://instagram.com/i.fest" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+
+
+    <main data-router-wrapper="">
+        <section data-router-view="team" class="team">
+            <div class="page-title">
+                <h1>Team</h1>
+            </div>
+    
+            <ul class="cont-grid">
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/1.7bb8435b.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Abhi Ratnman</h3>
+                                    <h5>Mentor</h5>
+                                    <h5><a href="tel:+917405892855">+91 74058 92855</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/2.966917db.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Jainil Pariya</h3>
+                                    <h5>Mentor</h5>
+                                    <h5><a href="tel:+919558021183">+91 95580 21183</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/3.faddacfc.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Shivani Bhandari</h3>
+                                    <h5>Mentor</h5>
+                                    <h5><a href="tel:+917016101851">+91 70161 01851</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/4.e26f2d2c.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Vishvesh Panchal</h3>
+                                    <h5>Mentor</h5>
+                                    <h5><a href="tel:+919429023152">+91 94290 23152</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cont-grid">
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/9.12907b31.jpeg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Rahil Patel</h3>
+                                    <h5>Sponsorship</h5>
+                                    <h5><a href="tel:+919375962477">+91 93759 62477</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/10.c36033c7.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Nikunj Shah</h3>
+                                    <h5>Sponsorship</h5>
+                                    <h5><a href="tel:+919924230332">+91 99242 30332</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cont-grid">
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/5.260af4fd.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Yashvi Shah</h3>
+                                    <h5>PR & Marketing</h5>
+                                    <h5><a href="tel:+919725035934">+91 97250 35934</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/6.7754b01d.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Harsh Patel</h3>
+                                    <h5>PR & Marketing</h5>
+                                    <h5><a href="tel:+917990252119">+91 79902 52119</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/11.5c96faee.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Kartavi Shah</h3>
+                                    <h5>PR & Marketing</h5>
+                                    <h5><a href="tel:+2348121451665">+234 81214 51665</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/8.c04344ac.JPG">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Vedant Thakkar</h3>
+                                    <h5>PR & Marketing</h5>
+                                    <h5><a href="tel:+919825551070">+91 98255 51070</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cont-grid">
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/12.25b9e6d3.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Devanshu Vithlani</h3>
+                                    <h5>Designing</h5>
+                                    <h5><a href="tel:+919714533000">+91 97145 33000</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/13.02e27dc8.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Parth Katrodiya</h3>
+                                    <h5>Designing</h5>
+                                    <h5><a href="tel:+919429432142">+91 94294 32142</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/14.1f470245.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Devyani Panchal</h3>
+                                    <h5>Designing</h5>
+                                    <h5><a href="tel:+919824413747">+91 98244 13747</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cont-grid">
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/15.292336b2.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Meet Raval</h3>
+                                    <h5>Production</h5>
+                                    <h5><a href="tel:+91886724439">+91 8867 24439</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/16.61a8c24f.JPG">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Madhavendra Choksi</h3>
+                                    <h5>Production</h5>
+                                    <h5><a href="tel:+919427772012">+91 94277 72012</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/17.e79221b5.jpg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Vishwa Shah</h3>
+                                    <h5>Content Writing</h5>
+                                    <h5><a href="tel:+919408780818">+91 94087 80818</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <div class="cont-image">
+                            <img src="/7.3bf6c547.jpeg">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h3>Khyati Bhuva</h3>
+                                    <h5>Content Writing</h5>
+                                    <h5><a href="tel:+917016332328">+91 70163 32328</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+
+
+    <script src="/js.00a46daa.js"></script>
+</body>
+</html>

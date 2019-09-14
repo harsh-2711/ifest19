@@ -1,0 +1,187 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: raleway;
+}
+
+.outer-nav{
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    /* left: 0; */
+    transform: translateY(-70%);
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    animation: FadeIn 4.2s linear;
+}
+
+.outer-nav li {
+    list-style: none;
+}
+
+.outer-nav li a{
+    display: block;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    color: #feffff;
+    /* background: #fff; */
+    /* width: 140px; */
+    /* margin: 4px 0;
+    margin-left: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px; */
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 1px;
+}
+.outer-nav li a:link{
+    color: #feffff;
+}
+.outer-nav li a:hover{
+    color: #262626;
+    /* color: #fff; */
+}
+
+.outer-nav li a:active{
+    color: #111;
+}
+
+@media (max-width:905px){
+    .outer-nav{
+        visibility: hidden;
+    }
+}
+
+
+
+#main-container {
+    width: 100%;
+    height: 100vh;
+    /* scroll-behavior: smooth; */
+    /* overflow-y: scroll; */
+}
+
+.fullpage{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.fullpage-scroll{
+
+}
+
+#main-container div#red{
+    background-image: url('/cover.a324564e.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#main-container div#green{
+    /* background-color: steelblue; */
+ 
+    background: #000000;  
+    background: -webkit-linear-gradient(to top right, #333, #000000);  
+    background: linear-gradient(to top right, #333, #000000); 
+
+
+} 
+
+#main-container div#blue{
+    /* background-color: blue; */
+}
+
+#main-container div#yellow{
+    background: #7d35ef; /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #7d35ef, #f507c0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #7d35ef, #f507c0);
+}
+
+#main-container div#steeleblue{
+    /* background: #333;  */
+    /* background: -webkit-linear-gradient(45deg, #333, #343434);
+    background: linear-gradient(45deg, #333, #343434); */
+
+    background: #000000;  
+    background: -webkit-linear-gradient(45deg, #333, #000000);  
+    background: linear-gradient(45deg, #333, #000000); 
+
+}
+
+
+#main-container div #wrapper{
+    /* position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0; */
+}
+
+/* snappy scroll ends here */
+
+/* custom scroll bar */
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background: #D3D3D3;
+    border-radius: 3px;
+}
+
+
+
+/* //SOCIAL MEDIA LINKS */
+.social-media{
+    margin: 0 auto;
+    margin-top: 30px;
+    list-style: none;
+    padding-left: 0;
+    /* animation: FadeIn 4.2s linear; */
+    /* overflow: hidden; */
+}
+.social-media li {
+    display: inline-flex;
+    border: 2px solid white;
+    border-radius: 100px;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 0 12px;
+    transition: all .2s;
+    /* overflow: hidden; */
+}
+
+.social-media li a{
+    color: white;
+    text-decoration: none;
+}
+
+.social-media li:hover{
+    transform: scale(1.06); 
+    cursor: pointer;
+}
+@media (max-width:699px){
+    .social-media{
+        bottom: 1%;
+        left: -3%;
+    }
+}
+@media (max-width:488px){
+    .social-media{
+        bottom: 1%;
+        left: -8%;
+    }
+}
+/* ----------------------------- */
+
+/* //SOCIAL MEDIA LINKS ENDS */
+
+
+
+/*# sourceMappingURL=/home.2753aabd.css.map */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/users/registerstyle.css">
+</head>
+
+<body style="color: white; ">
+
+  <div class="wrapper">
+    <div class="container">
+      <h1>i.OHunt</h1>
+      <h5>Register Here</h5>
+      <form method="post" class="form">
+        <input type="hidden" name="csrfmiddlewaretoken" value="KXVvCIz0ZVC30HSJfNTs7hgtz4jcs10nBYSmJCe25zR5wyGu61OxPPSu4YaqhVeh">
+        <div class="login-box">
+          <div class="error"></div>
+          <div class="login_textbox">
+            <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+            <input type="text" placeholder="Team-Name (No Spaces)" name="username" max_length="150" required id="id_username">
+          </div>
+          <div class="error"></div>
+          <div class="login_textbox">
+            <i class="fa fa-user fa-2x" aria-hidden="true">&nbsp;</i>
+            <input type="text" placeholder="Player-1" name="first_name" max_length="30" required id="id_first_name">
+          </div>
+          <div class="error"></div>
+          <div class="login_textbox">
+            <i class="fa fa-user fa-2x" aria-hidden="true">&nbsp;</i>
+            <input type="text" placeholder="Player-2" name="last_name" max_length="150" required id="id_last_name">
+          </div>
+          <div class="error"></div>
+          <div class="login_textbox">
+            <label class="fa fa-envelope fa-2x"></label>
+            <input type="email" class="form__input" placeholder="Email" name="email" required id="id_email">
+          </div>
+          <div class="error"></div>
+          <div class="login_textbox">
+            <i class="fa fa-mobile fa-2x" aria-hidden="true">&nbsp;&nbsp;</i>
+            <input type="text" placeholder="Mobile No." name="phone" pattern="[0-9]{10}" required id="id_phone">
+          </div>
+          <div class="error"></div>
+          <div class="login_textbox">
+            <i class="fa fa-lock fa-2x" aria-hidden="true">&nbsp;</i>
+            <input type="password" placeholder="Password" name="password1" required id="id_password1">
+          </div>
+          <div class="error"></div>
+          <div class="login_textbox">
+            <i class="fa fa-lock fa-2x" aria-hidden="true">&nbsp;</i>
+            <input type="password" placeholder="Confirm Password" name="password2" required id="id_password2">
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="submit-btn">
+            Submit
+          </button>
+        </div>
+    </div>
+
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+
+    </ul>
+  </div>
+</body>
+
+</html>
