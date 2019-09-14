@@ -51,11 +51,11 @@
 // var d = ['d1','d2','d3','d4','d5','d6'];
 // var d = ['d1','d2','d3','d4','d5','d6','d7','d8','d9','d10','d11','d12','d13','d14','d15','d16','d17','d18','d19','d20','d21','d22','d23'];
 
-function init(){
-    
+function init() {
+
 
     var e = document.querySelectorAll('li');
-    var d = document.querySelectorAll('p');
+    //var d = document.querySelectorAll('p');
 
 
     // for(var i=0;i<23;i++) { 
@@ -64,18 +64,18 @@ function init(){
     //     console.log(typeof(e[i]));
     // }
 
-    for(var i=0;i<23;i++) {
+    for (var i = 0; i < 23; i++) {
         console.log(e[i]);
 
-        $("#e-" + (i + 1)).click(function(){
-            var content = $(this).attr('data');
-            $(".show").removeClass("show");
-            $("." + content).addClass("show");
+        $("#e-" + (i + 1)).click(function() {
+                var content = $(this).attr('data');
+                $(".show").removeClass("show");
+                $("." + content).addClass("show");
 
-        })
-        // e[i].addEventListener("click", function() {
-            
-            
+            })
+            // e[i].addEventListener("click", function() {
+
+
         //     for(var j=0;j<23;j++) {
         //         console.log(i);
 
@@ -86,10 +86,10 @@ function init(){
         //             console.log(d[1].classList[0])
         //             d[j].classList.add('show');
         //         }
-                    
+
         //     }
         // })
-        
+
     }
 
 }
