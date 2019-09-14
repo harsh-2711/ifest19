@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,22 +14,26 @@
 
     <style>
         /* Team Page */
-        .page-title{
+        
+        .page-title {
             text-align: center;
             width: 100%;
             height: 20%;
         }
-        .page-title i{
+        
+        .page-title i {
             color: #fff;
             font-size: 30px;
             position: absolute;
             left: 5%;
             top: 7%;
         }
-        .page-title i:hover{
+        
+        .page-title i:hover {
             opacity: 0.7;
         }
-        .page-title h1{
+        
+        .page-title h1 {
             padding: 35px;
             font-size: 40px;
             font-weight: 700;
@@ -36,7 +41,8 @@
             letter-spacing: 2px;
             color: #d5cae2;
         }
-        .cont-grid{
+        
+        .cont-grid {
             margin: 0px 0 0 0;
             padding: 0px 0px 0px 0px;
             list-style: none;
@@ -44,13 +50,15 @@
             text-align: center;
             width: 100%;
         }
+        
         .cont-grid li {
             width: 250px;
             height: 250px;
             display: inline-block;
             margin: 50px 50px;
         }
-        .user{
+        
+        .user {
             color: white;
             width: 100%;
             height: 100%;
@@ -58,33 +66,37 @@
             position: relative;
             cursor: default;
         }
-        .cont-image{
+        
+        .cont-image {
             position: absolute;
             width: 100%;
             height: 100%;
         }
-        .cont-image img{
+        
+        .cont-image img {
             width: 100%;
             height: 100%;
             /* border-radius: 10%; */
         }
+        
         .overlay {
-            position: absolute; 
+            position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             background: rgb(0, 0, 0);
             background: rgba(0, 0, 0, 0.3);
-            color: #f1f1f1; 
+            color: #f1f1f1;
             width: inherit;
             transition: .5s rota;
-            opacity:0;
+            opacity: 0;
             color: white;
             padding: 20px 0px 20px 0px;
             text-align: center;
         }
-        .text{
+        
+        .text {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -94,28 +106,34 @@
             text-align: center;
             width: 100%;
         }
-        .overlay h3{
+        
+        .overlay h3 {
             font-size: 20px;
         }
-        .overlay h5{
+        
+        .overlay h5 {
             font-size: 16px;
         }
-        .overlay a{
+        
+        .overlay a {
             color: #fff;
         }
-        .cont-image:hover img{
+        
+        .cont-image:hover img {
             filter: blur(5px);
             -webkit-filter: blur(5px);
             transition: .3s ease-in-out;
             /* border-radius: 50%; */
         }
+        
         .cont-image:hover .overlay {
             opacity: 1;
             /* border-radius: 50%; */
             transition: .3s ease-in-out;
         }
-        @media(max-width: 576px){
-            .cont-grid li{
+        
+        @media(max-width: 576px) {
+            .cont-grid li {
                 margin: 45px auto;
             }
         }
@@ -123,10 +141,11 @@
     </style>
 
 </head>
+
 <body>
 
     <input type="checkbox" id="navcheck" role="button" title="menu">
-    
+
     <label for="navcheck" aria-hidden="true" title="menu">
         <span class="burger">
             <span class="bar">
@@ -134,13 +153,14 @@
             </span>
         </span>
     </label>
-    
+
     <nav id="menu">
         <a href="./index.html">Home</a>
         <!-- <a href="./about.html">About</a> -->
         <a href="./event/event.html">Events</a>
         <a href="./team.html">Team</a>
         <a href="./register.html">Register</a>
+        <a href="./sponsors.html">Sponsors</a>
         <!-- <a href="./contact.html">Contact Us</a> -->
         <ul class="social-medi">
             <li><a href="https://m.facebook.com/ifestdaiict" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -154,7 +174,7 @@
             <div class="page-title">
                 <h1>Team</h1>
             </div>
-    
+
             <ul class="cont-grid">
                 <li>
                     <div class="user">
@@ -410,4 +430,5 @@
 
     <script src="./js/index.js"></script>
 </body>
+
 </html>
