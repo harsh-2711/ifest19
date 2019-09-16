@@ -1,10 +1,10 @@
-body{
+body {
     padding: 0;
     margin: 0;
     font-family: raleway;
 }
 
-.outer-nav{
+.outer-nav {
     position: fixed;
     top: 50%;
     right: 2%;
@@ -20,7 +20,7 @@ body{
     list-style: none;
 }
 
-.outer-nav li a{
+.outer-nav li a {
     display: block;
     text-decoration: none;
     height: 30px;
@@ -39,25 +39,25 @@ body{
     text-align: right;
     letter-spacing: 1px;
 }
-.outer-nav li a:link{
+
+.outer-nav li a:link {
     color: #feffff;
 }
-.outer-nav li a:hover{
+
+.outer-nav li a:hover {
     color: #262626;
     /* color: #fff; */
 }
 
-.outer-nav li a:active{
+.outer-nav li a:active {
     color: #111;
 }
 
-@media (max-width:905px){
-    .outer-nav{
+@media (max-width:905px) {
+    .outer-nav {
         visibility: hidden;
     }
 }
-
-
 
 #main-container {
     width: 100%;
@@ -66,75 +66,87 @@ body{
     /* overflow-y: scroll; */
 }
 
-.fullpage{
+.fullpage {
     position: relative;
     width: 100%;
     height: 100%;
 }
-.fullpage-scroll{
 
-}
+.fullpage-scroll {}
 
-#main-container div#red{
-    background-image: url('cover.jpg');
+#main-container div#red {
+    /* background-image: url('cover.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background-color: black;
+    /* SVG fallback for IE 9 (could be data URI, or could use filter) */
+    background-image: url(fallback-gradient.svg);
+    /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+    background-image: -webkit-linear-gradient(left, black, black);
+    /* Firefox 3.6 - 15 */
+    background-image: -moz-linear-gradient(left, black, black);
+    /* Opera 11.1 - 12 */
+    background-image: -o-linear-gradient(left, black, black);
+    /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+    background-image: linear-gradient(to right, black, black);
+    margin: 0px;
+    overflow: hidden;
 }
 
-#main-container div#green{
+#main-container div#green {
     /* background-color: steelblue; */
- 
-    background: #000000;  
-    background: -webkit-linear-gradient(to top right, #333, #000000);  
-    background: linear-gradient(to top right, #333, #000000); 
+    background: #000000;
+    background: -webkit-linear-gradient(to top right, #333, #000000);
+    background: linear-gradient(to top right, #333, #000000);
+}
 
-
-} 
-
-#main-container div#blue{
+#main-container div#blue {
     /* background-color: blue; */
 }
 
-#main-container div#yellow{
-    background: #7d35ef; /* fallback for old browsers */
-    background: -webkit-linear-gradient(45deg, #7d35ef, #f507c0); /* Chrome 10-25, Safari 5.1-6 */
+#main-container div#yellow {
+    background: #7d35ef;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #7d35ef, #f507c0);
+    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(45deg, #7d35ef, #f507c0);
 }
 
-#main-container div#steeleblue{
+#main-container div#steeleblue {
     /* background: #333;  */
     /* background: -webkit-linear-gradient(45deg, #333, #343434);
     background: linear-gradient(45deg, #333, #343434); */
-
-    background: #000000;  
-    background: -webkit-linear-gradient(45deg, #333, #000000);  
-    background: linear-gradient(45deg, #333, #000000); 
-
+    background: #000000;
+    background: -webkit-linear-gradient(45deg, #333, #000000);
+    background: linear-gradient(45deg, #333, #000000);
 }
 
-
-#main-container div #wrapper{
+#main-container div #wrapper {
     /* position: absolute;
     width: 100%;
     margin: 0;
     padding: 0; */
 }
 
+
 /* snappy scroll ends here */
 
+
 /* custom scroll bar */
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 0px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: #D3D3D3;
     border-radius: 3px;
 }
 
 
-
 /* //SOCIAL MEDIA LINKS */
-.social-media{
+
+.social-media {
     margin: 0 auto;
     margin-top: 30px;
     list-style: none;
@@ -142,6 +154,7 @@ body{
     /* animation: FadeIn 4.2s linear; */
     /* overflow: hidden; */
 }
+
 .social-media li {
     display: inline-flex;
     border: 2px solid white;
@@ -157,28 +170,32 @@ body{
     /* overflow: hidden; */
 }
 
-.social-media li a{
+.social-media li a {
     color: white;
     text-decoration: none;
 }
 
-.social-media li:hover{
-    transform: scale(1.06); 
+.social-media li:hover {
+    transform: scale(1.06);
     cursor: pointer;
 }
-@media (max-width:699px){
-    .social-media{
+
+@media (max-width:699px) {
+    .social-media {
         bottom: 1%;
         left: -3%;
     }
 }
-@media (max-width:488px){
-    .social-media{
+
+@media (max-width:488px) {
+    .social-media {
         bottom: 1%;
         left: -8%;
     }
 }
+
+
 /* ----------------------------- */
 
-/* //SOCIAL MEDIA LINKS ENDS */
 
+/* //SOCIAL MEDIA LINKS ENDS */
