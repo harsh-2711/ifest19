@@ -115,6 +115,9 @@ nav {
     transform: translateX(-100%);
     will-change: transform;
     transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    overflow-y: scroll;
+    overflow-x: auto;
+    background: #fff;
 }
 
 nav::before {
@@ -175,6 +178,18 @@ nav a:nth-child(5) {
 
 nav a:nth-child(6) {
     transition-delay: 0s, 350ms;
+}
+
+nav a:nth-child(7) {
+    transition-delay: 0s, 400ms;
+}
+
+nav a:nth-child(8) {
+    transition-delay: 0s, 450ms;
+}
+
+nav a:nth-child(9) {
+    transition-delay: 0s, 500ms;
 }
 
 nav a:hover,
@@ -307,7 +322,7 @@ main .content {
     padding-left: 0;
     text-align: center;
     bottom: 2%;
-    position: absolute;
+    position: relative;
     /* animation: FadeIn 4.2s linear; */
     /* overflow: hidden; */
     width: 100%;
@@ -346,12 +361,23 @@ main .content {
         bottom: 1%;
         left: -3%;
     }
+    #mainLogo {
+        max-width: 40px;
+        max-height: 40px;
+        margin-top: 10px
+    }
+    .footer__navigation {}
 }
 
 @media (max-width:488px) {
     .social-medi {
         bottom: 1%;
         left: -8%;
+    }
+    #mainLogo {
+        max-width: 3px;
+        max-height: 30px;
+        margin-top: 5px
     }
 }
 
