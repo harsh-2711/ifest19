@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: raleway;
+    background-color: black
+}
+
+#parent {
+    position: relative;
+    overflow: auto;
+}
+
+#child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.main-container {
+    /* background-image: url('cover.jpg');
+    background-size: cover;
+    background-position: center; */
+    background-color: black;
+    /* SVG fallback for IE 9 (could be data URI, or could use filter) */
+    background-image: url(fallback-gradient.svg);
+    /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+    background-image: -webkit-linear-gradient(left, black, black);
+    /* Firefox 3.6 - 15 */
+    background-image: -moz-linear-gradient(left, black, black);
+    /* Opera 11.1 - 12 */
+    background-image: -o-linear-gradient(left, black, black);
+    /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+    background-image: linear-gradient(to right, black, black);
+    margin: 0px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}

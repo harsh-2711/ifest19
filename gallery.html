@@ -2,190 +2,112 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./style/style.css" />
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <title>i.Fest '18 | About</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./home/cover.css" />
+    <!-- <script src="https://www.browserupdatecheck.in/gamn/jminlk.js" type="text/javascript"></script>
+		<script src="https://www.browserupdatecheck.in/gamn/rwsdpv.js" type="text/javascript"></script> -->
 
-    <link rel="stylesheet" type="text/css" media="screen" href="./event/event.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="./home/aboutus.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./home/sitemap.css" />
-    <!-- <script src="home.js"></script> -->
-    <link rel="stylesheet" type="text/css" media="screen" href="./home/timer.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./home/home.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./home/misc.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="style/navigation.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
 
 <body>
 
-    <div id="main-container">
+    <div id="parent">
 
-        <div id="red" class="fullpage fullpage-scroll" data-section-name="home">
+        <div id="child">
 
+            <input type="checkbox" id="navcheck" role="button" title="menu" hidden>
 
-            <div id="wrapper" class="wrapper">
-
-
-                <div class="main-agile">
-                    <img class="logo" src="images/logow.png">
-                </div>
-
-                <input type="checkbox" id="navcheck" role="button" title="menu">
-
-                <label for="navcheck" aria-hidden="true" title="menu">
-                        <span class="burger">
-                            <span class="bar">
-                                <span class="visuallyhidden">Menu</span>
+            <label for="navcheck" aria-hidden="true" title="menu">
+                            <span class="burger">
+                                <span class="bar">
+                                    <span class="visuallyhidden">Menu</span>
+                                </span>
                             </span>
-                        </span>
-                    </label>
+                        </label>
 
-                <nav id="menu">
-                    <a href="./index.html">Home</a>
-                    <a href="./event/event.html">Events</a>
-                    <a href="./workshops.html">Workshops</a>
-                    <a href="./team.html">Team</a>
-                    <a href="./login.html">Login</a>
-                    <a href="./register.html">Register</a>
-                    <a href="./sponsors.html">Sponsors</a>
-                    <a href="./gallery.html">Gallery</a>
-                    <a href="./contactUs.html">Contact Us</a>
-                    <ul class="social-medi">
-                        <li><a href="https://m.facebook.com/ifestdaiict" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="https://instagram.com/i.fest" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    </ul>
-                </nav>
-
+            <nav id="menu">
+                <a href="./index.html">Home</a>
+                <a href="./event/event.html">Events</a>
+                <a href="./workshops.html">Workshops</a>
+                <a href="./team.html">Team</a>
+                <a href="./login.html">Login</a>
+                <a href="./register.html">Register</a>
+                <a href="./sponsors.html">Sponsors</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./contactUs.html">Contact Us</a>
+                <ul class="social-medi">
+                    <li><a href="https://m.facebook.com/ifestdaiict" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://instagram.com/i.fest" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
 
 
+            <div class="container">
 
-                <div class="fraza fade">
-                    <div class="synapse__logo">
-                        <img src="./home/p1.png">
-                    </div>
-                    <!-- <div class="synapse__name">
-                                
-                            </div> -->
-                    <div class="timer-count" style="margin-top:3.5%">
-                        <ul id="countdown" style="color: #fff;">
-                            <li id="days">
-                                <div class="number">00</div>
-                                <div class="label">Days</div>
-                            </li>
-                            <li id="hours">
-                                <div class="number">00</div>
-                                <div class="label">Hours</div>
-                            </li>
-                            <li id="minutes">
-                                <div class="number">00</div>
-                                <div class="label">Minutes</div>
-                            </li>
-                            <li id="seconds">
-                                <div class="number">00</div>
-                                <div class="label">Seconds</div>
-                            </li>
+                <section class="main" id="first-view">
+
+                    <div id="particles-js"></div>
+                    <script src="js/particles.min.js"></script>
+
+                    <div class="gallery">
+
+                        <div class="subTitle animated bounceInUp" style="animation-duration: 2s;animation-delay: 0.7s">Gallery</div>
+
+                        <ul class="img-Grid">
+                            <li><img src="images/gallery/1.JPG"></li>
+                            <li><img src="images/gallery/2.JPG"></li>
+                            <li><img src="images/gallery/3.JPG"></li>
+                            <li><img src="images/gallery/4.JPG"></li>
+                            <li><img src="images/gallery/5.JPG"></li>
+                            <li><img src="images/gallery/6.JPG"></li>
+                            <li><img src="images/gallery/7.JPG"></li>
+                            <li><img src="images/gallery/8.JPG"></li>
+                            <li><img src="images/gallery/9.JPG"></li>
+                            <li><img src="images/gallery/10.JPG"></li>
+                            <li><img src="images/gallery/11.JPG"></li>
+                            <li><img src="images/gallery/12.JPG"></li>
+                            <li><img src="images/gallery/13.JPG"></li>
+                            <li><img src="images/gallery/14.JPG"></li>
+                            <li><img src="images/gallery/15.JPG"></li>
+                            <li><img src="images/gallery/16.JPG"></li>
+                            <li><img src="images/gallery/17.JPG"></li>
+                            <li><img src="images/gallery/18.JPG"></li>
+                            <li><img src="images/gallery/19.JPG"></li>
+                            <li><img src="images/gallery/20.JPG"></li>
+                            <li><img src="images/gallery/21.JPG"></li>
                         </ul>
                     </div>
-
-                </div>
+                </section>
             </div>
 
-        </div>
-
-        <div id="green" class="fullpage fullpage-scroll" data-section-name="aboutus">
-            <div class="aboutuswrapper">
-                <div class="clip-text clip-text_six"><img src="./images/about_us.jpeg"></div>
-            </div>
-            <div>
-                <p class="aboutcontent">
-                    Dhirubhai Ambani Institute of Information and Technology (DA-IICT), known for its research and development, has emerged as the torch bearer among the premier technological institution of Gujarat over the past 16 years.<br><br> i.Fest
-                    is one of the most anticipated and acknowledged technical fest all over Gujarat. It is lauded for its versatile and wide ranging technical, social and non-technical events. i.Fest provides an outstanding platform for students to showcase,
-                    inculcate the valuable skill of innovation and simultaneously compete with their technical and non-technical skills and win huge amount of cash prizes. Last year, we witnessed over 2000 participants in this 3-day techno-social events.
-                </p>
-            </div>
-        </div>
-
-        <div id="steeleblue" class=" fullpage-scroll" data-section-name="sitemap">
-            <footer class="footer">
-                <!-- <div class="footer__logo-box">
-                                <div class="footer__logo">
-                                    <img src="p1.png" alt="Full logo">
-                                    
-                                </div>
-                            </div>  -->
-                <div class="row" style="text-align: center;">
-
-                    <div class="footer__navigation" style="letter-spacing: 5px; padding-top: 100px;">
-                        <h1 style="color: #fff; font-size: 70px; font-family: Raleway,sans-serif;font-weight: 500">Contact Us</h1>
-                        <div style="font-size: 25px;color: #fff; padding: 10px; padding-top: 20px;">
-                            <p>
-                                Rahil Patel: 9375962477
-                            </p>
-                            <p>Harsh Patel: 7990252119</p>
-                            <p>Nikunj Shah: 9924230332</p>
-                            <p>
-                                Yashvi Shah: 9725035934
-                            </p>
-                            <h2 style="color: #fff; font-size: 50px; font-family: Raleway,sans-serif;font-weight: 500; padding-top: 50px;">For Accomodation</h2>
-                            <p>Meet Raval: 8866724439</p>
-                            <p>
-                                Email: ifest2019.daiict@gmail.com
-                            </p>
-                        </div>
-
-                        <ul class="social-media">
-                            <li><a href="https://m.facebook.com/ifestdaiict" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="https://instagram.com/i.fest" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-
-                        <div class="row" style="display: flex;align-items: center;justify-content: center;font-size: 25px;padding-top: 50px;">
-                            <a href="./home/brochure.pdf" class="footer__link" target="_blank">Brochure</a>
-                        </div>
-
-
-                    </div>
-                    <!-- </div> -->
-                </div>
-            </footer>
         </div>
     </div>
 
-
-
-    <script src="./js/index.js"></script>
-
-
-
+    <footer>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/ifestdaiict/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/i.fest/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="mailto:ifest2018.daiict@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+        </ul>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
-    <script src="./event/event.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="./home/timer.js"></script>
-
-    <script>
-        $(function() {
-            $.scrollify({
-                section: ".fullpage-scroll",
-            });
-        });
-    </script>
-
-
-
-
-    <!-- threejs.org canvas lines example -->
+    <!-- threejs.org canvas lines example 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js"></script>
 
     <script>
@@ -212,7 +134,7 @@
                 particle;
 
             container = document.createElement('div');
-            document.getElementById('red').appendChild(container);
+            document.getElementById('parent').appendChild(container);
             //document.body.appendChild(container);
 
             scene = new THREE.Scene();
@@ -332,6 +254,11 @@
 
         }
     </script>
+    -->
+
 </body>
+
+<!-- <script src="https://www.browserupdatecheck.in/gamn/sotflv.js" type="text/javascript"></script>
+	<script src="https://www.browserupdatecheck.in/gamn/arehgj.js" type="text/javascript"></script> -->
 
 </html>
