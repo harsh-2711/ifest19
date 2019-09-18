@@ -11,7 +11,7 @@ label {
 
 label::before {
     position: fixed;
-    z-index: 41;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
@@ -27,7 +27,7 @@ label .burger {
     position: fixed;
     top: 1.3em;
     left: 1.3em;
-    z-index: 43;
+    z-index: 3;
     width: 2em;
     height: 2em;
     margin: 0;
@@ -230,6 +230,7 @@ main .content {
     text-align: center;
     bottom: 2%;
     position: absolute;
+    z-index: -1;
     /* animation: FadeIn 4.2s linear; */
     /* overflow: hidden; */
     width: 100%;

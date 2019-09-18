@@ -26,7 +26,7 @@ label .burger {
     position: fixed;
     top: 1.3em;
     left: 1.3em;
-    z-index: 3;
+    z-index: 43;
     width: 2em;
     height: 2em;
     margin: 0;
@@ -71,7 +71,7 @@ nav {
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 40;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;

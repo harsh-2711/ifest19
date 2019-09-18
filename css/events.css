@@ -354,6 +354,11 @@ body {
             line-height: 30px;
             vertical-align: middle;
         }
+        .eventName img {
+            width: 60%;
+            height: 85%;
+            margin-bottom: 40px;
+        }
         .eventDescription {
             max-height: 350px;
             padding: 3em 1em;
