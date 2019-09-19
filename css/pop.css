@@ -1,0 +1,148 @@
+h1 {
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #4573d1;
+    /* margin-bottom: 20px; */
+}
+
+.popup-scroll {
+    /* Overflow Scroll */
+    overflow-y: scroll;
+    max-height: 100%;
+    padding: 0 1em 0 0;
+}
+
+
+/* custom scrollbars - webkit only */
+
+.popup-scroll::-webkit-scrollbar {
+    background-color: #EEE;
+    width: 10px;
+}
+
+.popup-scroll::-webkit-scrollbar-thumb {
+    border: 1px #EEE solid;
+    border-radius: 200px;
+    background: #4573d1;
+    -webkit-box-shadow: 0 0 8px #555 inset;
+    box-shadow: 0 0 8px #555 inset;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.popup-scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 70%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    z-index: 95;
+    height: 90%;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #4573d1;
+    font-family: Tahoma, Arial, sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #4573d1;
+}
+
+.popup .content {
+    max-height: 100%;
+    overflow: auto;
+}
+
+.popup-scroll {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup-scroll h2 {
+    margin-top: 0;
+    color: #4573d1;
+    font-family: Tahoma, Arial, sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.popup-scroll .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup-scroll .close:hover {
+    color: #4573d1;
+}
+
+.popup-scroll .content {
+    max-height: 80%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+    .popup {
+        width: 98%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .popup-scroll {
+        width: 70%;
+    }
+    .popup .content {
+        max-height: 80%;
+    }
+}

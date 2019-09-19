@@ -22,6 +22,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./home/home.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./home/misc.css" />
 
+    <link rel="stylesheet" type="text/css" media="screen" href="css/pop.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/popMain.css" />
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -38,7 +45,7 @@
                     <img class="logo" id="mainLogo" src="images/logow.png">
                 </div>
 
-                <input type="checkbox" id="navcheck" role="button" title="menu">
+                <input type="checkbox" id="navcheck" role="button" title="menu" style="z-index: 20">
 
                 <label for="navcheck" aria-hidden="true" title="menu">
                         <span class="burger">
@@ -48,7 +55,7 @@
                         </span>
                     </label>
 
-                <nav id="menu">
+                <nav id="menu" style="z-index: 20">
                     <a href="./index.html">Home</a>
                     <a href="./event/event.html">Events</a>
                     <a href="./workshops.html">Workshops</a>
@@ -67,8 +74,90 @@
 
 
 
+                <!-- Pop up icons -->
+                <div class="container">
+                    <section id="first-view" style="padding: 0%">
+
+                        <div class="fv-content">
+                            <div class="content-container">
+                                <div class="item">
+                                    <div class="ifest-content1">
+                                        <h2 style="color: #fff;text-transform: none;font-family: 'Raleway', sans-serif; z-index: 100;">B U Y &nbsp T I C K E T S</h2>
+                                    </div>
+
+                                    <div class="ifest-content2">
+                                        <a href="#popup1"><img src="images/a.png" class="animated zoomInLeft" height="50px" width="100px" style="margin-bottom: 10px"></a>
+                                        <a href="#popup2" style="padding-left: 10px;padding-right: 10px"><img src="images/b.png" class="animated pulse infinite" height="70px" width="125px"></a>
+                                        <a href="#popup3"><img src="images/c.png" class="animated zoomInRight" height="50px" width="100px" style="margin-bottom: 10px"></a>
+                                    </div>
+                                </div>
+                                <!-- POPUP -->
+                                <div id="popup1" class="overlay">
+                                    <div class="popup">
+
+                                        <a class="close" href="#sitemap">&times;</a>
+                                        <div class="content">
+                                            <h2>Tickets For Website Designing Workshop<br>[21/09/19]</h2>
+                                            <iframe src='https://allevents.in/manage/tickets/book.php?event_id=80002802795100&platform=iframe&hide_details=1' style='width:90%;height:520px;border:1px solid #efefef;z-index: 2;'>
+                                            </iframe>
+                                            <br>
+                                            <div style="margin-top: 5%; margin-bottom: 5%;">
+                                                <a href="https://allevents.in/" target="_blank">
+                                                    <img src="images/allevents.png" height="50px" width="230px">
+                                                </a><br><br>
+                                                <span style="color: #000;">Official Ticketing Partner</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="popup2" class="overlay">
+                                    <div class="popup">
+                                        <h2>Tickets For i.Fest '19</h2>
+                                        <a class="close" href="#sitemap">&times;</a>
+                                        <div class="content">
+                                            <iframe src='https://allevents.in/manage/tickets/book.php?event_id=80001136960226&platform=iframe&hide_details=1' style='width:95%;height:520px;border:1px solid #efefef;z-index: 2;'>
+                                            </iframe>
+                                            <br>
+                                            <div style="margin-top: 5%; margin-bottom: 5%;">
+                                                <a href="https://allevents.in/" target="_blank">
+                                                    <img src="images/allevents.png" height="50px" width="230px">
+                                                </a>
+                                                <br>
+                                                <br><span style="color: #000;">Official Ticketing Partner</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="popup3" class="overlay">
+                                    <div class="popup">
+                                        <h2>Tickets For Paintball at i.Fest '19</h2>
+                                        <a class="close" href="#sitemap">&times;</a>
+                                        <div class="content">
+                                            <iframe src='https://allevents.in/manage/tickets/book.php?event_id=80001671885419&auto_fill=1&platform=iframe&hide_details=1' style='width:90%;height:520px;border:1px solid #efefef;z-index: 2;'>
+                                            </iframe>
+                                            <br>
+                                            <div style="margin-top: 5%; margin-bottom: 5%;">
+                                                <a href="https://allevents.in/" target="_blank">
+                                                    <img src="images/allevents.png" height="50px" width="230px">
+                                                </a>
+                                                <br>
+                                                <br>
+                                                <span style="color: #000;">Official Ticketing Partner</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                l
 
                 <div class="fraza fade">
+
                     <div class="synapse__logo">
                         <img src="./home/p1.png" style="max-width: 100%">
                     </div>
@@ -98,7 +187,6 @@
 
                 </div>
             </div>
-
         </div>
 
         <div id="green" class="fullpage fullpage-scroll" data-section-name="aboutus">
@@ -184,6 +272,14 @@
     </script>
 
 
+    <script>
+        $(document).ready(function() {
+            $(".toggle-menu").click(function() {
+                $('#menuBars').toggleClass('fa-bars fa-close');
+                document.querySelector('.navList').classList.toggle("menuOpen");
+            });
+        });
+    </script>
 
 
     <!-- threejs.org canvas lines example -->

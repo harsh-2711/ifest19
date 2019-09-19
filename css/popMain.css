@@ -1,0 +1,469 @@
+/* @import url('https://fonts.googleapis.com/css?family='Roboto',sans-serif:400,700'); */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400');
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+    z-index: 30;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    /* background-image: #000;  */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #fff;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+
+/* html{
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+}
+body{
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
+	background: #f9f9f9 ;
+	font-weight: 300;
+	font-size: 15px;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	overflow-y: scroll;
+	overflow-x: hidden;
+} */
+
+section {
+    padding: 5% 10%;
+    overflow-y: scroll;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+    display: block;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+#first-view {
+    display: block;
+    position: relative;
+    background-color: transparent;
+    /* background: #000no-repeat; */
+    background-size: cover;
+    background-position: 90% 24%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0%;
+}
+
+#my {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    z-index: 1;
+}
+
+.fv-content {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    z-index: 2;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.ifest-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.ifest-content1 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.ifest-content1 h1 {
+    font-size: 50px;
+}
+
+.ifest-content1 h3 {
+    font-size: 30px;
+}
+
+.ifest-content1 p {
+    font-size: 25px;
+}
+
+.ifest-content2 {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.item {
+    height: 450px;
+    width: 650px;
+    border-radius: 0%;
+    position: absolute;
+    top: 53%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.content-container {
+    position: relative;
+    display: block;
+    height: 100%;
+    z-index: 2;
+}
+
+
+/* .ifest-content img{
+	height: 300px;
+	width: 300px;
+} */
+
+.ifest-content1 img {
+    height: 130px;
+    width: 900px;
+}
+
+.ifest-content2 img.lt {
+    height: 75px;
+    width: 75px;
+}
+
+.ifest-content2 img.mt {
+    padding-top: 20px;
+    height: 125px;
+    width: 75px;
+}
+
+.ifest-content2 img.rt {
+    height: 75px;
+    width: 75px;
+}
+
+#weblogo {
+    transform: scale(1.8);
+}
+
+.ifest-content .date {
+    background-color: #000;
+    margin: 0px auto;
+    padding: 7px 10px;
+    border-radius: 51px;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 70%;
+}
+
+.date h1 {
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.login {
+    float: left;
+    position: fixed;
+    left: 0%;
+    width: auto;
+}
+
+.login img {
+    height: 50px;
+    width: 150px;
+}
+
+.register {
+    font-size: 10px;
+    margin: 0.8em;
+    color: #fff;
+    padding: 0.8em 0.5em;
+    border-radius: 50px;
+    background: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    -moz-animation: infinite;
+    -ms-animation: infinite;
+    -o-animation: infinite;
+    -webkit-animation: infinite;
+    animation: infinite;
+    border: none;
+    width: 40%;
+}
+
+.register:hover {
+    -webkit-transition: all 0.3s, color 0.3s;
+    -moz-transition: all 0.3s, color 0.3s;
+    -o-transition: all 0.3s, color 0.3s;
+    -ms-transition: all 0.3s, color 0.3s;
+    transition: all 0.3s, color 0.3s;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    -webkit-animation: none;
+    animation: none;
+}
+
+@keyframes pulse-1 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(2.5);
+        opacity: 0.2;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse-2 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.8);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media(max-width: 1100px) {
+    .item {
+        height: 390px;
+        width: 390px;
+    }
+    .ifest-content img {
+        height: 330px;
+        width: 330px;
+        /* margin-bottom: 10%; */
+    }
+    .ifest-content1 {
+        width: 60%;
+        /* padding-top: 10%; */
+    }
+    .ifest-content1 h1 {
+        font-size: 35px;
+    }
+    .ifest-content1 h3 {
+        font-size: 25px;
+    }
+    .ifest-content1 p {
+        font-size: 20px;
+    }
+    .ifest-content1 h2 {
+        font-size: 15px;
+    }
+    .ifest-content2 img {
+        /* margin-top: -20%; */
+        height: 45px;
+        width: 73px;
+    }
+}
+
+@media(max-width: 940px) {
+    .item {
+        height: 390px;
+        width: 390px;
+    }
+    .ifest-content img {
+        height: 330px;
+        width: 330px;
+        margin-bottom: 0%;
+    }
+    .ifest-content1 {
+        width: 60%;
+        /* padding-top: 10%; */
+    }
+    .ifest-content1 h1 {
+        font-size: 35px;
+    }
+    .ifest-content1 h3 {
+        font-size: 25px;
+    }
+    .ifest-content1 p {
+        font-size: 20px;
+    }
+    .ifest-content1 h2 {
+        font-size: 15px;
+    }
+    .ifest-content2 img {
+        /* margin-top: -20%; */
+        height: 45px;
+        width: 73px;
+    }
+}
+
+@media(min-width: 650px) and (max-width: 768px) {
+    .item {
+        height: 360px;
+        width: 360px;
+    }
+    .ifest-content img {
+        height: 330px;
+        width: 330px;
+    }
+    .ifest-content1 {
+        width: 60%;
+        padding-top: 5%;
+    }
+    .ifest-content1 h1 {
+        font-size: 35px;
+    }
+    .ifest-content1 h3 {
+        font-size: 25px;
+    }
+    .ifest-content1 p {
+        font-size: 20px;
+    }
+    .ifest-content1 h2 {
+        font-size: 15px;
+    }
+    .ifest-content2 {
+        padding-top: 10%;
+    }
+    .ifest-content2 img {
+        height: 45px;
+        width: 73px;
+    }
+}
+
+@media (max-width: 650px) {
+    .login img {
+        height: 40px;
+        width: 90px;
+    }
+    .item {
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        width: 250px;
+        height: 250px;
+    }
+    .ifest-content img {
+        height: 250px;
+        width: 250px;
+    }
+    .ifest-content1 h1 {
+        font-size: 35px;
+    }
+    .ifest-content1 h3 {
+        font-size: 25px;
+    }
+    .ifest-content1 p {
+        font-size: 20px;
+    }
+    .ifest-content1 h2 {
+        font-size: 15px;
+    }
+    .ifest-content1 {
+        margin-top: 15%;
+        width: 90%;
+        /* margin-left: 5%; */
+    }
+    .ifest-content2 {
+        padding-top: 65%;
+    }
+    .ifest-content2 img {
+        height: 45px;
+        width: 73px;
+    }
+}
