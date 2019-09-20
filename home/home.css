@@ -4,6 +4,16 @@ body {
     font-family: raleway;
 }
 
+.about-us-heading {
+    font-size: 60px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    align-content: center;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    color: #fff;
+}
+
 .outer-nav {
     position: fixed;
     top: 50%;
@@ -185,12 +195,30 @@ body {
         bottom: 1%;
         left: -3%;
     }
+    .about-us-heading {
+        font-size: 50px;
+        font-family: Raleway, sans-serif;
+        font-weight: 400;
+        align-content: center;
+        margin-bottom: 50px;
+        padding-top: 100px;
+        color: #fff;
+    }
 }
 
 @media (max-width:488px) {
     .social-media {
         bottom: 1%;
         left: -8%;
+    }
+    .about-us-heading {
+        font-size: 30px;
+        font-family: Raleway, sans-serif;
+        font-weight: 400;
+        align-content: center;
+        margin-bottom: 50px;
+        padding-top: 100px;
+        color: #fff;
     }
 }
 
