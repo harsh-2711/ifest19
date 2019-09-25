@@ -146,7 +146,7 @@ div {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 0;
 }
 
 .ifest-content1 h1 {
@@ -169,7 +169,7 @@ div {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 0;
 }
 
 .item {
@@ -201,7 +201,7 @@ div {
     position: relative;
     display: block;
     height: 100%;
-    z-index: 2;
+    z-index: 0;
 }
 
 
