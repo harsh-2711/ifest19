@@ -357,7 +357,7 @@ main .content {
     cursor: pointer;
 }
 
-@media (max-width:699px) {
+@media (max-width:905px) {
     .social-medi {
         bottom: 1%;
         left: -3%;
@@ -367,18 +367,19 @@ main .content {
         max-height: 40px;
         margin-top: 10px
     }
-    .footer__navigation {}
+}
+
+@media (max-width:699px) {
+    .social-medi {
+        bottom: 1%;
+        left: -3%;
+    }
 }
 
 @media (max-width:488px) {
     .social-medi {
         bottom: 1%;
         left: -8%;
-    }
-    #mainLogo {
-        max-width: 3px;
-        max-height: 30px;
-        margin-top: 5px
     }
 }
 
