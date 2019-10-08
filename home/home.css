@@ -84,6 +84,12 @@ body {
 
 .fullpage-scroll {}
 
+#main-container div#maroon {
+    /* background-color: steelblue; */
+    background-image: url("../images/aakash.jpg");
+    background-size: 100% 100%
+}
+
 #main-container div#red {
     /* background-image: url('cover.jpg');
     background-size: cover;
